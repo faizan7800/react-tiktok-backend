@@ -10,10 +10,10 @@ const dbConnect =
 
 // middlewares
 app.use(express.json());
-app.use();
-app.use(function (req, res, next) {
-  console.log("Time:", Date.now());
-  next();
+app.use((req, res, next) => {
+  res.setHeaders("Access-Control-Allow-Origin", "*"),
+    res.setHeaders("Access-Control-Allow-Headers", "*"),
+    next();
 });
 // if you will not add this then you will get the error of not adding the JSON into the Database
 mongoose.connect(
