@@ -11,6 +11,10 @@ const dbConnect =
 // middlewares
 app.use(express.json());
 app.use();
+app.use(function (req, res, next) {
+  console.log("Time:", Date.now());
+  next();
+});
 // if you will not add this then you will get the error of not adding the JSON into the Database
 mongoose.connect(
   dbConnect,
