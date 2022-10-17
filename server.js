@@ -24,6 +24,7 @@ mongoose.connect(
 app.get("/", (req, res) => res.status(200).send("Hello World Baby!"));
 
 app.get("/v1/posts", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
   res.status(200).send(Data);
 });
 app.get("/v2/posts", (req, res) => {
