@@ -1,4 +1,5 @@
-import express, { application } from "express";
+import express from "express";
+import cors from "cors";
 import mongoose from "mongoose";
 import Data from "./data.js";
 import Videos from "./dbModel.js";
@@ -10,11 +11,7 @@ const dbConnect =
 
 // middlewares
 app.use(express.json());
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*"),
-    res.setHeader("Access-Control-Allow-Headers", "*"),
-    next();
-});
+app.use(cors());
 // if you will not add this then you will get the error of not adding the JSON into the Database
 mongoose.connect(
   dbConnect,
