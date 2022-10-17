@@ -11,8 +11,8 @@ const dbConnect =
 // middlewares
 app.use(express.json());
 app.use((req, res, next) => {
-  res.setHeaders("Access-Control-Allow-Origin", "*"),
-    res.setHeaders("Access-Control-Allow-Headers", "*"),
+  res.setHeader("Access-Control-Allow-Origin", "*"),
+    res.setHeader("Access-Control-Allow-Headers", "*"),
     next();
 });
 // if you will not add this then you will get the error of not adding the JSON into the Database
