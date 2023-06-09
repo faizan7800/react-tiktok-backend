@@ -17,6 +17,15 @@ const data = [
     comments: "200",
     shares: "30",
   },
+  {
+    url: "https://v16-webapp.tiktok.com/8ad99d8913edc206bd82a1aadf35aa58/63495b92/video/tos/useast2a/tos-useast2a-pve-0037c001-aiso/a90f9d5a11cf47eb8a433b8385bc5ed2/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4314&bt=2157&cs=0&ds=3&ft=kLO5qyFUZmo0P9QBVBkVQwZWkiHKJdmC0&mime_type=video_mp4&qs=0&rc=ZGg2aDtnNWc5OWk2NTY4N0Bpamo3ajU6Zjw2ZTMzZjczM0AtNi1hLl4xNTExLjVgNTYyYSNscmlxcjRnM2dgLS1kMWNzcw%3D%3D&l=20221014065224010244089071240AD1A1&btag=80000",
+    channel: "Faizan Channel",
+    description: "something reallly cool in the form of dairy",
+    song: "mitti day tibbay tu sajjay pasy",
+    likes: "102",
+    comments: "200",
+    shares: "30",
+  },
 ];
 
 export default data;

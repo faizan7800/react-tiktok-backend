@@ -7,9 +7,9 @@ import Videos from "./dbModel.js";
 const app = express();
 const port = process.env.PORT || 9000;
 const dbConnect =
-  "mongodb+srv://faizan-admin:ArfanBhai12@cluster0.imwx1tt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://faizankhan:admin@cluster0.vapryi3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
-// middlewares
+// middlewares  -
 app.use(express.json());
 app.use(cors());
 // if you will not add this then you will get the error of not adding the JSON into the Database
@@ -24,7 +24,6 @@ mongoose.connect(
 app.get("/", (req, res) => res.status(200).send("Hello World Baby!"));
 
 app.get("/v1/posts", (req, res) => {
-  res.setHeader("Content-Type", "application/json");
   res.status(200).send(Data);
 });
 app.get("/v2/posts", (req, res) => {
